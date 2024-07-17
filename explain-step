@@ -1,0 +1,24 @@
+Insertion of Nodes:
+
+Insert 15: 15
+Insert 10: 15 -> 10
+Insert 20: 15 -> 10, 20
+Insert 8: 15 -> 10 -> 8, 20
+Insert 12: 15 -> 10 -> 8, 12, 20
+Insert 17: 15 -> 10 -> 8, 12, 20 -> 17
+Insert 25: 15 -> 10 -> 8, 12, 20 -> 17, 25
+Insert 19: 15 -> 10 -> 8, 12, 20 -> 17 -> 19, 25
+Traversals Before Deletion:
+
+Inorder: 8 10 12 15 17 19 20 25
+Preorder: 15 10 8 12 20 17 19 25
+Postorder: 8 12 10 19 17 25 20 15
+Deletion of Node with value 10:
+
+10 has two children (8 and 12). The in-order successor of 10 is 12. We replace 10 with 12 and delete 12.
+New tree structure after deletion: 15 -> 12 -> 8, 20 -> 17 -> 19, 25
+Traversals After Deletion:
+
+Inorder: 8 12 15 17 19 20 25
+Preorder: 15 12 8 20 17 19 25
+Postorder: 8 12 19 17 25 20 15
